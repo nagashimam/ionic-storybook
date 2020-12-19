@@ -1,0 +1,14 @@
+@mixin size($height) {
+  width: $height * 2;
+  height: $height;
+}
+
+.large {
+  @include size(8rem);
+}
+.medium {
+  @include size(4rem);
+}
+.small {
+  @include size(2rem);
+}
