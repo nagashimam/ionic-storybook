@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { IonicModule } from "@ionic/angular";
 import { moduleMetadata } from "@storybook/angular";
 import { ButtonComponent } from "src/app/components/button/button.component";
-
+import mdx from "./button-document.mdx";
 //#region テストデータ
 //#endregion
 
@@ -20,6 +20,11 @@ export default {
   excludeStories: /.*[data]$/,
   decorators: [moduleMetadata(data)],
   component: ButtonComponent,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 //#endregion
 const baseCss = `' md button button-solid ion-activatable ion-focusable hydrated'`;

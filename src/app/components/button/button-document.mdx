@@ -1,0 +1,38 @@
+import imageFile from "./button-document.png";
+import { ArgsTable, Story, Source, Canvas } from "@storybook/addon-docs/blocks";
+import { ButtonComponent } from "./button.component";
+import dedent from "ts-dedent";
+
+# ButtonComponent
+
+## ドキュメント
+
+<style>
+  {`
+  img {
+    border: dashed 2px #999;
+  }
+`}
+</style>
+
+<img src={imageFile} alt="ドキュメント" />
+
+## コンポーネント
+
+<Canvas>
+  <Story id="dialogcomponent--ダイアログ" />
+</Canvas>
+
+## プロパティ
+
+<style>
+  {`
+  .padding {
+    padding-bottom: 18px;
+  }
+`}
+</style>
+
+<div className="padding">
+  <ArgsTable of={ButtonComponent} />
+</div>
